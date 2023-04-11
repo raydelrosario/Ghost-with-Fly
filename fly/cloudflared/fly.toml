@@ -1,0 +1,7 @@
+app = "raydelrosario-blog-cloudflared"
+primary_region = "iad"
+
+[build]
+  image = "cloudflare/cloudflared:latest"
+[processes]
+tunnel = "tunnel run"

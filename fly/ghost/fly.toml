@@ -1,0 +1,11 @@
+app = "raydelrosario-blog-ghost"
+primary_region = "iad"
+
+[build]
+  image = "ghost:5-alpine"
+[env]
+  NODE_ENV = "production"
+  url = "https://raydelrosario.com"
+[mounts]
+source="ghost_data"
+destination="/var/lib/ghost/content"
